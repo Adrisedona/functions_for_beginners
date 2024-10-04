@@ -1,6 +1,5 @@
 package util;
 
-import java.util.Arrays;
 
 public final class ArraySort {
 	/**
@@ -88,7 +87,6 @@ public final class ArraySort {
 
 	public static void quicksort(double[] array) {
 		quicksort(array, 0, array.length - 1);
-		Arrays.class;
 	}
 
 	private static void quicksort(double[] array, int lowIndex, int highIndex) {
