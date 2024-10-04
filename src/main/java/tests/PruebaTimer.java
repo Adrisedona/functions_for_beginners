@@ -10,7 +10,7 @@ import javax.swing.Timer;
 
 import util.MyFrame;
 
-public class PruebaTimer extends MyFrame {
+class PruebaTimer extends MyFrame {
 
 	boolean parpadeo;
 
