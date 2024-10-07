@@ -4,6 +4,10 @@ import java.awt.Rectangle;
 import java.util.Scanner;
 
 import javax.swing.*;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
 
 public final class Util {
 
@@ -284,12 +288,14 @@ public final class Util {
 	/**
 	 * Parsea desde un String un numero entero entre dos valores (ambos incluidos)
 	 * 
-	 * @param min valor minimo del numero (al introducir null como valor, se
-	 *            vuelve
-	 *            el menor valor que acepta el tipo de dato int)
-	 * @param max valor minimo del numero (al introducir null como valor, se
-	 *            vuelve
-	 *            el mayor valor que acepta el tipo de dato int)
+	 * @param min           valor minimo del numero (al introducir null como valor,
+	 *                      se
+	 *                      vuelve
+	 *                      el menor valor que acepta el tipo de dato int)
+	 * @param max           valor minimo del numero (al introducir null como valor,
+	 *                      se
+	 *                      vuelve
+	 *                      el mayor valor que acepta el tipo de dato int)
 	 * @param numberToParse cadena de la que obtener el numero
 	 * @throws IllegalArgumentException si el cadena es nula, no contiene un
 	 *                                  valor numerico o no esta entre el minimo y
@@ -315,7 +321,6 @@ public final class Util {
 		} catch (NumberFormatException e) {
 			throw new IllegalArgumentException("No se ha introducido un numero");
 		}
-		
 		return numint;
 
 	}
@@ -323,12 +328,14 @@ public final class Util {
 	/**
 	 * Parsea desde un String un numero decimal entre dos valores (ambos incluidos)
 	 * 
-	 * @param min valor minimo del numero (al introducir null como valor, se
-	 *            vuelve
-	 *            el menor valor que acepta el tipo de dato double)
-	 * @param max valor minimo del numero (al introducir null como valor, se
-	 *            vuelve
-	 *            el mayor valor que acepta el tipo de dato double)
+	 * @param min           valor minimo del numero (al introducir null como valor,
+	 *                      se
+	 *                      vuelve
+	 *                      el menor valor que acepta el tipo de dato double)
+	 * @param max           valor minimo del numero (al introducir null como valor,
+	 *                      se
+	 *                      vuelve
+	 *                      el mayor valor que acepta el tipo de dato double)
 	 * @param numberToParse cadena de la que obtener el numero
 	 * @throws IllegalArgumentException si el cadena es nula, no contiene un
 	 *                                  valor numerico o no esta entre el minimo y
@@ -372,7 +379,7 @@ public final class Util {
 		return retu;
 	}
 
-	public static boolean intersects(JLabel testA, JLabel testB) {//TODO comprobación de hitbox a mano
+	public static boolean intersects(JLabel testA, JLabel testB) {
 		Rectangle rectB = testB.getBounds();
 		Rectangle result = SwingUtilities.computeIntersection(testA.getX(), testA.getY(), testA.getWidth(),
 				testA.getHeight(), rectB);
@@ -385,6 +392,18 @@ public final class Util {
 
 	public static double random(double min, double max) {
 		return (Math.random() * (max - min) + min);
+	}
+
+	public static Document creaArbol(String ruta) {
+		Document doc = null;
+		try {
+			DocumentBuilderFactory factoria = DocumentBuilderFactory.newInstance();
+			factoria.setIgnoringComments(true);
+			doc = factoria.newDocumentBuilder().parse(ruta);
+		} catch (Exception e) {
+			System.out.println("Error generando el árbol DOM: " + e.getMessage());
+		}
+		return doc;
 	}
 
 }

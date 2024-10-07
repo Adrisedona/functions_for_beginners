@@ -11,6 +11,7 @@ import java.util.Scanner;
  * Clase para probar codigo antes de añadirlo a algun otro archivo de la
  * libreria
  */
+
 class Temp {
 	public static void main(String[] args) throws InterruptedException {
 		// String cadena = "Esto va a ir lento";
@@ -39,6 +40,7 @@ class Temp {
 		}
 
 		char[] buffer = new char[3];
+		@SuppressWarnings("unused")
 		int nCaracteres;
 		try (FileReader fr = new FileReader(file)) {
 			while ((nCaracteres = fr.read(buffer)) > -1) {
