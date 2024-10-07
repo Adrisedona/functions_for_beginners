@@ -386,14 +386,31 @@ public final class Util {
 		return (result.getWidth() > 0 && result.getHeight() > 0);
 	}
 
+	/**
+	 * Genera un numero entero aleatorio entre <code>min</code> y <code>max</code> (ambos incuidos) 
+	 * @param min valor minimo del rango
+	 * @param max valor maximo del rango
+	 * @return numero generado
+	 */
 	public static int random(int min, int max) {
 		return ((int) (Math.random() * (max - min + 1) + min));
 	}
 
+	/**
+	 * Genera un numero decimal aleatorio entre <code>min</code> y <code>max</code> (ambos incuidos) 
+	 * @param min valor minimo del rango
+	 * @param max valor maximo del rango
+	 * @return numero generado
+	 */
 	public static double random(double min, double max) {
 		return (Math.random() * (max - min) + min);
 	}
 
+	/**
+	 * Genera el arbol DOM del archivo parametro
+	 * @param ruta archivo xml del que generar el arbol
+	 * @return objeto conteniendo el arbol generado, <code>null</code> si ocurre algun error
+	 */
 	public static Document creaArbol(String ruta) {
 		Document doc = null;
 		try {
