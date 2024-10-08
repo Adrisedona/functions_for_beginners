@@ -4,7 +4,6 @@ import java.awt.Rectangle;
 import java.util.Scanner;
 
 import javax.swing.*;
-import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.w3c.dom.Document;
@@ -409,13 +408,14 @@ public final class Util {
 	/**
 	 * Genera el arbol DOM del archivo parametro
 	 * @param ruta archivo xml del que generar el arbol
+	 * @param ignoreComents <code>true</code> para ignorar comentarios, <code>false</code> para no;
 	 * @return objeto conteniendo el arbol generado, <code>null</code> si ocurre algun error
 	 */
-	public static Document creaArbol(String ruta) {
+	public static Document creaArbol(String ruta, boolean ignoreComments) {
 		Document doc = null;
 		try {
 			DocumentBuilderFactory factoria = DocumentBuilderFactory.newInstance();
-			factoria.setIgnoringComments(true);
+			factoria.setIgnoringComments(ignoreComments);
 			doc = factoria.newDocumentBuilder().parse(ruta);
 		} catch (Exception e) {
 			System.out.println("Error generando el árbol DOM: " + e.getMessage());
