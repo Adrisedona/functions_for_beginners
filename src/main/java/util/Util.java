@@ -19,8 +19,8 @@ public final class Util {
 	/**
 	 * Solicita una cadena al usuario con una longitud entre min y max
 	 * 
-	 * @param min longitud minima de la cadena (0 si null)
-	 * @param max longitud maxima de la cadena (Integer.MAX_VALUE si null)
+	 * @param min longitud minima de la cadena (<code>0</code> si null)
+	 * @param max longitud maxima de la cadena ({@link Integer#MAX_VALUE} si null)
 	 * @param txt texto a mostrar al usuario para que introduzca la cadena deseado
 	 * @return cadena introducida por el usuario
 	 */
@@ -45,10 +45,8 @@ public final class Util {
 	/**
 	 * Solicita al usuario un numero entero entre dos valores (ambos incluidos)
 	 * 
-	 * @param min valor minimo del numero (al introducir null como valor, se vuelve
-	 *            el menor valor que acepta el tipo de dato int)
-	 * @param max valor minimo del numero (al introducir null como valor, se vuelve
-	 *            el mayor valor que acepta el tipo de dato int)
+	 * @param min valor minimo del numero ({@link Integer#MIN_VALUE} si null)
+	 * @param max valor maximo del numero ({@link Integer#MAX_VALUE} si null)
 	 * @param txt texto para informar al usuario el uso del numero que va a
 	 *            introducir
 	 * @return numero introducido por el usuario entre los valores
@@ -83,10 +81,8 @@ public final class Util {
 	/**
 	 * Solicita al usuario un numero decimal entre dos valores (ambos incluidos)
 	 * 
-	 * @param min valor minimo del numero (al introducir null como valor, se vuelve
-	 *            el menor valor que acepta el tipo de dato double)
-	 * @param max valor minimo del numero (al introducir null como valor, se vuelve
-	 *            el mayor valor que acepta el tipo de dato double)
+	 * @param min valor minimo del numero (-{@link Double#MAX_VALUE} si null)
+	 * @param max valor maximo del numero ({@link Double#MAX_VALUE} si null)
 	 * @param txt texto para informar al usuario el uso del numero que va a
 	 *            introducir
 	 * @return numero introducido por el usuario entre los valores
@@ -200,11 +196,9 @@ public final class Util {
 	 * Solicita al usuario un numero entero entre dos valores (ambos incluidos)
 	 * 
 	 * @param min valor minimo del numero (al introducir null como valor, se
-	 *            vuelve
-	 *            el menor valor que acepta el tipo de dato int)
+	 *            vuelve el menor valor que acepta el tipo de dato int)
 	 * @param max valor minimo del numero (al introducir null como valor, se
-	 *            vuelve
-	 *            el mayor valor que acepta el tipo de dato int)
+	 *            vuelve el mayor valor que acepta el tipo de dato int)
 	 * @param txt texto para informar al usuario el uso del numero que va a
 	 *            introducir
 	 * @return numero introducido por el usuario entre los valores
@@ -383,7 +377,9 @@ public final class Util {
 	}
 
 	/**
-	 * Genera un numero entero aleatorio entre <code>min</code> y <code>max</code> (ambos incuidos) 
+	 * Genera un numero entero aleatorio entre <code>min</code> y <code>max</code>
+	 * (ambos incuidos)
+	 * 
 	 * @param min valor minimo del rango
 	 * @param max valor maximo del rango
 	 * @return numero generado
@@ -393,7 +389,9 @@ public final class Util {
 	}
 
 	/**
-	 * Genera un numero decimal aleatorio entre <code>min</code> y <code>max</code> (ambos incuidos) 
+	 * Genera un numero decimal aleatorio entre <code>min</code> y <code>max</code>
+	 * (ambos incuidos)
+	 * 
 	 * @param min valor minimo del rango
 	 * @param max valor maximo del rango
 	 * @return numero generado
@@ -401,6 +399,5 @@ public final class Util {
 	public static double random(double min, double max) {
 		return (Math.random() * (max - min) + min);
 	}
-
 
 }
