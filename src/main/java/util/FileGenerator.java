@@ -40,7 +40,7 @@ public class FileGenerator {
 	}
 
 	private long randomLong() {
-		return rnd.nextLong(Long.MAX_VALUE);
+		return rnd.nextLong();
 	}
 
 	public boolean generateFile(int bytes) {
