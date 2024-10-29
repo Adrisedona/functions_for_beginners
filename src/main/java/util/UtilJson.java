@@ -70,7 +70,7 @@ public class UtilJson {
 		}
 	}
 
-	public void escribeJSON(JsonValue json, File f) throws FileNotFoundException {
+	public static void escribeJSON(JsonValue json, File f) throws FileNotFoundException {
 		PrintWriter pw = new PrintWriter(f);
 		JsonWriter writer = Json.createWriter(pw);
 		// writer.write((JsonStructure) json);
