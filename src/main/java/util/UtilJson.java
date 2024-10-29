@@ -1,19 +1,23 @@
 package util;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintWriter;
 import java.net.URL;
 
 import javax.json.Json;
 import javax.json.JsonReader;
 import javax.json.JsonValue;
+import javax.json.JsonWriter;
 import javax.net.ssl.HttpsURLConnection;
 
 public class UtilJson {
 
-	private UtilJson() {}
+	private UtilJson() {
+	}
 
 	public static JsonValue leeJSON(String ruta) {
 		try {
@@ -45,6 +49,7 @@ public class UtilJson {
 		}
 	}
 
+	@SuppressWarnings("deprecation")
 	private static JsonValue leerHttp(String direccion) throws IOException {
 		URL url = new URL(direccion);
 		try (InputStream is = url.openStream();
@@ -53,7 +58,8 @@ public class UtilJson {
 		}
 	}
 
-	private static  JsonValue leerHttps(String direccion) throws IOException {
+	@SuppressWarnings("deprecation")
+	private static JsonValue leerHttps(String direccion) throws IOException {
 		URL url = new URL(direccion);
 		HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 		try (InputStream is = conn.getInputStream();
@@ -62,5 +68,20 @@ public class UtilJson {
 		} finally {
 			conn.disconnect();
 		}
+	}
+
+	public void escribeJSON(JsonValue json, File f) throws FileNotFoundException {
+		PrintWriter pw = new PrintWriter(f);
+		JsonWriter writer = Json.createWriter(pw);
+		// writer.write((JsonStructure) json);
+		if (json.getValueType() == JsonValue.ValueType.OBJECT) {
+			writer.writeObject(json.asJsonObject());
+			// writer.writeObject((JsonObject)json);
+		} else if (json.getValueType() == JsonValue.ValueType.ARRAY) {
+			writer.writeArray(json.asJsonArray());
+			// writer.writeArray((JsonArray)json);
+		} else
+			System.out.println("No se soporta la escritura");
+		writer.close();
 	}
 }
