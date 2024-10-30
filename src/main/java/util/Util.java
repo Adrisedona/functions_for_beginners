@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 import javax.swing.*;
 
+import java.time.format.DateTimeFormatter;
+import java.time.*;
+
 public final class Util {
 
 	private static Scanner sc = new Scanner(System.in);
@@ -398,6 +401,16 @@ public final class Util {
 	 */
 	public static double random(double min, double max) {
 		return (Math.random() * (max - min) + min);
+	}
+
+	/**
+	 * 
+	 * @param unixTime
+	 * @return
+	 */
+	public static String unixTimeToString(long unixTime) {
+		final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+		return Instant.ofEpochSecond(unixTime).atZone(ZoneId.of("GMT+1")).format(formatter);
 	}
 
 }
