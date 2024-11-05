@@ -1,6 +1,5 @@
 package util;
 
-
 public final class ArraySort {
 	/**
 	 * Esta es una libreria de funciones, no se debe instanciar un objeto de esta
@@ -179,20 +178,15 @@ public final class ArraySort {
 
 	/**
 	 * Baraja un array de manera aleatoria
-	 * 
+	 * @param <T> tipo de dato del array
 	 * @param array array a barajar
 	 * @param copy  {@code true} para barajar una copia del array, {@code false}
 	 *              para barajar el propio array
 	 * @return el array barajado, solo es necesario guardar este return cuando el
 	 *         parametro {@code copy} es {@code true}
 	 */
-	public static <T> T[] shuffle(T[] array, boolean copy) {
-		T[] arrayReturn;
-		if (copy) {
-			arrayReturn = array.clone();
-		} else {
-			arrayReturn = array;
-		}
+	public static <T extends Object> T[] shuffle(T[] array, boolean copy) {
+		T[] arrayReturn = copy ? array.clone() : array;
 		for (int i = 0; i < arrayReturn.length; i++) {
 			swapper(arrayReturn, (int) (Math.random() * arrayReturn.length),
 					(int) (Math.random() * arrayReturn.length));
@@ -210,12 +204,7 @@ public final class ArraySort {
 	 *         parametro {@code copy} es {@code true}
 	 */
 	public static double[] shuffle(double[] array, boolean copy) {
-		double[] arrayReturn;
-		if (copy) {
-			arrayReturn = array.clone();
-		} else {
-			arrayReturn = array;
-		}
+		double[] arrayReturn = copy ? array.clone() : array;
 		for (int i = 0; i < arrayReturn.length; i++) {
 			ArraySort.swapper(arrayReturn, (int) (Math.random() * arrayReturn.length),
 					(int) (Math.random() * arrayReturn.length));
@@ -233,12 +222,7 @@ public final class ArraySort {
 	 *         parametro {@code copy} es {@code true}
 	 */
 	public static int[] shuffle(int[] array, boolean copy) {
-		int[] arrayReturn;
-		if (copy) {
-			arrayReturn = array.clone();
-		} else {
-			arrayReturn = array;
-		}
+		int[] arrayReturn = copy ? array.clone() : array;
 		for (int i = 0; i < arrayReturn.length; i++) {
 			ArraySort.swapper(arrayReturn, (int) (Math.random() * arrayReturn.length),
 					(int) (Math.random() * arrayReturn.length));
@@ -256,12 +240,7 @@ public final class ArraySort {
 	 *         parametro {@code copy} es {@code true}
 	 */
 	public static char[] shuffle(char[] array, boolean copy) {
-		char[] arrayReturn;
-		if (copy) {
-			arrayReturn = array.clone();
-		} else {
-			arrayReturn = array;
-		}
+		char[] arrayReturn = copy ? array.clone() : array;
 		for (int i = 0; i < arrayReturn.length; i++) {
 			ArraySort.swapper(arrayReturn, (int) (Math.random() * arrayReturn.length),
 					(int) (Math.random() * arrayReturn.length));
