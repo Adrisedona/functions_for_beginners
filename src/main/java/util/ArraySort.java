@@ -28,8 +28,8 @@ public final class ArraySort {
 		array[index2] = swap;
 	}
 
-	public static void swapper(Object[] array, int index1, int index2) {
-		Object swap = array[index1];
+	public static <T> void swapper(T[] array, int index1, int index2) {
+		T swap = array[index1];
 		array[index1] = array[index2];
 		array[index2] = swap;
 	}
@@ -186,8 +186,8 @@ public final class ArraySort {
 	 * @return el array barajado, solo es necesario guardar este return cuando el
 	 *         parametro {@code copy} es {@code true}
 	 */
-	public static Object[] shuffle(Object[] array, boolean copy) {
-		Object[] arrayReturn;
+	public static <T> T[] shuffle(T[] array, boolean copy) {
+		T[] arrayReturn;
 		if (copy) {
 			arrayReturn = array.clone();
 		} else {
