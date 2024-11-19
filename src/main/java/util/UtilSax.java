@@ -4,6 +4,7 @@ import javax.xml.parsers.*;
 import org.xml.sax.*;
 import org.xml.sax.helpers.*;
 import java.io.*;
+import java.lang.reflect.InvocationTargetException;
 
 public class UtilSax {
 
@@ -20,11 +21,15 @@ public class UtilSax {
 	 * @throws IOException
 	 * @throws NoSuchMethodException
 	 * @throws SecurityException
+	 * @throws InvocationTargetException 
+	 * @throws IllegalArgumentException 
+	 * @throws IllegalAccessException 
+	 * @throws InstantiationException 
 	 */
-	public static void getSax(String entradaXML, Class<? extends DefaultHandler> clazz) throws ParserConfigurationException, SAXException, IOException, NoSuchMethodException, SecurityException {
+	public static <T extends DefaultHandler> void getSax(String entradaXML, Class<T> clazz) throws ParserConfigurationException, SAXException, IOException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		SAXParserFactory factory = SAXParserFactory.newInstance();
 		SAXParser parser = factory.newSAXParser();
-		Object parserSax = clazz.getDeclaredConstructor(); 
+		Object parserSax = clazz.getDeclaredConstructor().newInstance(); 
 		parser.parse(entradaXML, clazz.cast(parserSax));
 	}
 }

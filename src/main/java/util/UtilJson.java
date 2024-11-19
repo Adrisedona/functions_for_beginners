@@ -49,7 +49,6 @@ public class UtilJson {
 		}
 	}
 
-	@SuppressWarnings("deprecation")
 	private static JsonValue leerHttp(String direccion) throws IOException {
 		URL url = new URL(direccion);
 		try (InputStream is = url.openStream();
@@ -58,7 +57,6 @@ public class UtilJson {
 		}
 	}
 
-	@SuppressWarnings("deprecation")
 	private static JsonValue leerHttps(String direccion) throws IOException {
 		URL url = new URL(direccion);
 		HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
