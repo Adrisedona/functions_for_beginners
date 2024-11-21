@@ -59,7 +59,7 @@ class PruebaTimer extends MyFrame {
 			}
 		});
 		timer.start();
-
+		
 
 
 	}

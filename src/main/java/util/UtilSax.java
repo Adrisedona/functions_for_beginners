@@ -29,7 +29,7 @@ public class UtilSax {
 	public static <T extends DefaultHandler> void getSax(String entradaXML, Class<T> clazz) throws ParserConfigurationException, SAXException, IOException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		SAXParserFactory factory = SAXParserFactory.newInstance();
 		SAXParser parser = factory.newSAXParser();
-		Object parserSax = clazz.getDeclaredConstructor().newInstance(); 
-		parser.parse(entradaXML, clazz.cast(parserSax));
+		T parserSax = clazz.getDeclaredConstructor().newInstance(); 
+		parser.parse(entradaXML, parserSax);
 	}
 }

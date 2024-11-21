@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.29">
-<file name="C:\Users\AdrianEstevez\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\tests\PruebaSax.java">
-<error line="3" severity="warning" message="Usar la importación con &apos;.*&apos; debería evitarse - javax.xml.parsers.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
-<error line="4" severity="warning" message="Usar la importación con &apos;.*&apos; debería evitarse - org.xml.sax.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
-<error line="5" severity="warning" message="Usar la importación con &apos;.*&apos; debería evitarse - org.xml.sax.helpers.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
-<error line="6" severity="warning" message="Orden lexicográfico incorrecto de &apos;java.io.*&apos; importación. En caso de ser antes de &apos;org.xml.sax.helpers.*&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="6" severity="warning" message="Usar la importación con &apos;.*&apos; debería evitarse - java.io.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
-</file>
-<file name="C:\Users\AdrianEstevez\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\tests\PruebaTimer.java">
+<file name="C:\Users\Adrián\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\tests\PruebaTimer.java">
 <error line="7" severity="warning" message="Separación extra en el grupo de importación antes &apos;javax.swing.JFrame&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
 <error line="11" severity="warning" message="Separación extra en el grupo de importación antes &apos;util.MyFrame&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
 <error line="15" severity="warning" message="member def type en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
@@ -50,50 +43,41 @@
 <error line="61" severity="warning" message="ctor def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="65" severity="warning" message="ctor def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="C:\Users\AdrianEstevez\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\tests\Temp.java">
-<error line="10" severity="warning" message="Separación extra en el grupo de importación antes &apos;javax.xml.parsers.ParserConfigurationException&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="12" severity="warning" message="Separación extra en el grupo de importación antes &apos;org.xml.sax.SAXException&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="14" severity="warning" message="Separación extra en el grupo de importación antes &apos;util.UtilSax&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="16" severity="warning" message="Primera frase de Javadoc falta un período final." source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
-<error line="22" severity="warning" message="method def modifier en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="22" column="1" severity="warning" message="Archivo contiene caracteres de tabulación (este es el primer ejemplo)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
-<error line="29" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="31" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="32" severity="warning" message="try en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="33" severity="warning" message="while en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="34" severity="warning" message="while el descendiente en el nivel de sangrado 32 no está al nivel correcto, 16" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="35" severity="warning" message="while rcurly en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="36" severity="warning" message="try rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="37" severity="warning" message="catch el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="38" severity="warning" message="catch rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="40" severity="warning" message="try en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="41" severity="warning" message="while en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="42" severity="warning" message="while el descendiente en el nivel de sangrado 32 no está al nivel correcto, 16" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="43" severity="warning" message="while rcurly en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="44" severity="warning" message="try rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="45" severity="warning" message="La línea es mayor de 100 caracteres (encontrado 119)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="45" severity="warning" message="catch el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="46" severity="warning" message="catch rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="48" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="49" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="50" column="21" severity="warning" message="Local variable name &apos;nCaracteres&apos; must match pattern &apos;^[a-z]([a-z0-9][a-zA-Z0-9]*)?$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
-<error line="51" severity="warning" message="try en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="52" severity="warning" message="while en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="53" severity="warning" message="while el descendiente en el nivel de sangrado 32 no está al nivel correcto, 16" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="54" severity="warning" message="while rcurly en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="55" severity="warning" message="try rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="56" severity="warning" message="catch el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="57" severity="warning" message="catch rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="59" column="17" severity="warning" message="El comentario de Javadoc se coloca en la ubicación incorrecta." source="com.puppycrawl.tools.checkstyle.checks.javadoc.InvalidJavadocPositionCheck"/>
-<error line="74" severity="warning" message="try en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="75" severity="warning" message="try el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="77" severity="warning" message="La línea es mayor de 100 caracteres (encontrado 112)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="77" severity="warning" message="try rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="80" severity="warning" message="catch el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="81" severity="warning" message="catch rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="82" severity="warning" message="method def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<file name="C:\Users\Adrián\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\tests\Temp.java">
+<error line="11" severity="warning" message="Primera frase de Javadoc falta un período final." source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
+<error line="17" severity="warning" message="method def modifier en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="17" column="1" severity="warning" message="Archivo contiene caracteres de tabulación (este es el primer ejemplo)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="24" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="26" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="27" severity="warning" message="try en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="28" severity="warning" message="while en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="29" severity="warning" message="while el descendiente en el nivel de sangrado 32 no está al nivel correcto, 16" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="30" severity="warning" message="while rcurly en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="31" severity="warning" message="try rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="32" severity="warning" message="catch el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="33" severity="warning" message="catch rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="35" severity="warning" message="try en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="36" severity="warning" message="while en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="37" severity="warning" message="while el descendiente en el nivel de sangrado 32 no está al nivel correcto, 16" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="38" severity="warning" message="while rcurly en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="39" severity="warning" message="try rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="40" severity="warning" message="La línea es mayor de 100 caracteres (encontrado 119)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="40" severity="warning" message="catch el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="41" severity="warning" message="catch rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="43" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="44" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="45" column="21" severity="warning" message="Local variable name &apos;nCaracteres&apos; must match pattern &apos;^[a-z]([a-z0-9][a-zA-Z0-9]*)?$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
+<error line="46" severity="warning" message="try en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="47" severity="warning" message="while en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="48" severity="warning" message="while el descendiente en el nivel de sangrado 32 no está al nivel correcto, 16" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="49" severity="warning" message="while rcurly en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="50" severity="warning" message="try rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="51" severity="warning" message="catch el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="52" severity="warning" message="catch rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="54" column="17" severity="warning" message="El comentario de Javadoc se coloca en la ubicación incorrecta." source="com.puppycrawl.tools.checkstyle.checks.javadoc.InvalidJavadocPositionCheck"/>
+<error line="68" severity="warning" message="method def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="C:\Users\AdrianEstevez\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\util\ArraySort.java">
+<file name="C:\Users\Adrián\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\util\ArraySort.java">
 <error line="4" severity="warning" message="Primera frase de Javadoc falta un período final." source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
 <error line="4" column="1" severity="warning" message="Archivo contiene caracteres de tabulación (este es el primer ejemplo)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
 <error line="8" severity="warning" message="ctor def modifier en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
@@ -288,7 +272,7 @@
 <error line="248" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="249" severity="warning" message="method def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="C:\Users\AdrianEstevez\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\util\FileGenerator.java">
+<file name="C:\Users\Adrián\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\util\FileGenerator.java">
 <error line="9" severity="warning" message="Primera frase de Javadoc falta un período final." source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
 <error line="13" column="1" severity="warning" message="Archivo contiene caracteres de tabulación (este es el primer ejemplo)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
 <error line="14" severity="warning" message="member def modifier en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
@@ -350,7 +334,7 @@
 <error line="78" severity="warning" message="catch rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="79" severity="warning" message="method def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="C:\Users\AdrianEstevez\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\util\MyFrame.java">
+<file name="C:\Users\Adrián\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\util\MyFrame.java">
 <error line="3" severity="warning" message="Usar la importación con &apos;.*&apos; debería evitarse - java.awt.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
 <error line="4" severity="warning" message="Usar la importación con &apos;.*&apos; debería evitarse - javax.swing.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
 <error line="8" severity="warning" message="La línea es mayor de 100 caracteres (encontrado 105)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
@@ -363,7 +347,7 @@
 <error line="12" severity="warning" message="ctor def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="13" severity="warning" message="ctor def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="C:\Users\AdrianEstevez\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\util\Util.java">
+<file name="C:\Users\Adrián\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\util\Util.java">
 <error line="6" severity="warning" message="Separación extra en el grupo de importación antes &apos;javax.swing.*&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
 <error line="6" severity="warning" message="Usar la importación con &apos;.*&apos; debería evitarse - javax.swing.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
 <error line="8" severity="warning" message="Orden lexicográfico incorrecto de &apos;java.time.format.DateTimeFormatter&apos; importación. En caso de ser antes de &apos;javax.swing.*&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
@@ -635,7 +619,7 @@
 <error line="413" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="414" severity="warning" message="method def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="C:\Users\AdrianEstevez\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\util\UtilDom.java">
+<file name="C:\Users\Adrián\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\util\UtilDom.java">
 <error line="3" severity="warning" message="Usar la importación con &apos;.*&apos; debería evitarse - org.w3c.dom.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
 <error line="4" severity="warning" message="Usar la importación con &apos;.*&apos; debería evitarse - org.w3c.dom.ls.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
 <error line="5" severity="warning" message="Orden lexicográfico incorrecto de &apos;org.w3c.dom.bootstrap.*&apos; importación. En caso de ser antes de &apos;org.w3c.dom.ls.*&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
@@ -708,7 +692,7 @@
 <error line="95" severity="warning" message="for rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="96" severity="warning" message="method def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="C:\Users\AdrianEstevez\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\util\UtilJson.java">
+<file name="C:\Users\Adrián\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\util\UtilJson.java">
 <error line="11" severity="warning" message="Separación extra en el grupo de importación antes &apos;javax.json.Json&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
 <error line="19" severity="warning" message="ctor def modifier en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="19" column="1" severity="warning" message="Archivo contiene caracteres de tabulación (este es el primer ejemplo)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
@@ -736,57 +720,62 @@
 <error line="49" severity="warning" message="try rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="50" severity="warning" message="method def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="52" severity="warning" message="method def modifier en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="54" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="55" severity="warning" message="try en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="57" severity="warning" message="try el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="58" severity="warning" message="try rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="59" severity="warning" message="method def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="61" severity="warning" message="method def modifier en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="63" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="64" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="65" severity="warning" message="try en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="67" severity="warning" message="try el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="68" severity="warning" message="try rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="69" severity="warning" message="finally el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="70" severity="warning" message="finally rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="71" severity="warning" message="method def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="73" severity="warning" message="method def modifier en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="73" column="9" severity="warning" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="73" column="28" severity="warning" message="Abreviatura en nombre &apos;escribeJSON&apos; debe contener no más de &apos;2&apos; mayúsculas." source="com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"/>
-<error line="74" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="75" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="77" severity="warning" message="if en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="78" severity="warning" message="if el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="80" severity="warning" message="if rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="81" severity="warning" message="if el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="83" severity="warning" message="La construcción &apos;else&apos; debe usar &apos;{}&apos; (llaves)." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="83" severity="warning" message="if rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="85" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="86" severity="warning" message="method def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="53" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="54" severity="warning" message="try en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="56" severity="warning" message="try el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="57" severity="warning" message="try rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="58" severity="warning" message="method def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="60" severity="warning" message="method def modifier en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="61" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="62" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="63" severity="warning" message="try en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="65" severity="warning" message="try el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="66" severity="warning" message="try rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="67" severity="warning" message="finally el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="68" severity="warning" message="finally rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="69" severity="warning" message="method def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="71" severity="warning" message="method def modifier en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="71" column="9" severity="warning" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="71" column="28" severity="warning" message="Abreviatura en nombre &apos;escribeJSON&apos; debe contener no más de &apos;2&apos; mayúsculas." source="com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"/>
+<error line="72" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="73" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="75" severity="warning" message="if en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="76" severity="warning" message="if el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="78" severity="warning" message="if rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="79" severity="warning" message="if el descendiente en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="81" severity="warning" message="La construcción &apos;else&apos; debe usar &apos;{}&apos; (llaves)." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="81" severity="warning" message="if rcurly en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="83" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="84" severity="warning" message="method def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="C:\Users\AdrianEstevez\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\util\UtilSax.java">
+<file name="C:\Users\Adrián\Dropbox\DAM\1mero\Proyectos Curro\functions\src\main\java\util\UtilSax.java">
 <error line="3" severity="warning" message="Usar la importación con &apos;.*&apos; debería evitarse - javax.xml.parsers.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
 <error line="4" severity="warning" message="Usar la importación con &apos;.*&apos; debería evitarse - org.xml.sax.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
 <error line="5" severity="warning" message="Usar la importación con &apos;.*&apos; debería evitarse - org.xml.sax.helpers.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
 <error line="6" severity="warning" message="Orden lexicográfico incorrecto de &apos;java.io.*&apos; importación. En caso de ser antes de &apos;org.xml.sax.helpers.*&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
 <error line="6" severity="warning" message="Usar la importación con &apos;.*&apos; debería evitarse - java.io.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
-<error line="10" severity="warning" message="ctor def modifier en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="10" column="1" severity="warning" message="Archivo contiene caracteres de tabulación (este es el primer ejemplo)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
-<error line="12" severity="warning" message="ctor def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="14" severity="warning" message="Primera frase de Javadoc falta un período final." source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
-<error line="17" severity="warning" message="La línea es mayor de 100 caracteres (encontrado 102)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="18" severity="warning" message="Al cláusula debe tener una descripción que no esté vacía." source="com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"/>
+<error line="7" severity="warning" message="Orden lexicográfico incorrecto de &apos;java.lang.reflect.InvocationTargetException&apos; importación. En caso de ser antes de &apos;org.xml.sax.helpers.*&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="11" severity="warning" message="ctor def modifier en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="11" column="1" severity="warning" message="Archivo contiene caracteres de tabulación (este es el primer ejemplo)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="13" severity="warning" message="ctor def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="15" severity="warning" message="Primera frase de Javadoc falta un período final." source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
+<error line="18" severity="warning" message="La línea es mayor de 100 caracteres (encontrado 102)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="19" severity="warning" message="Al cláusula debe tener una descripción que no esté vacía." source="com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"/>
 <error line="20" severity="warning" message="Al cláusula debe tener una descripción que no esté vacía." source="com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"/>
 <error line="21" severity="warning" message="Al cláusula debe tener una descripción que no esté vacía." source="com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"/>
 <error line="22" severity="warning" message="Al cláusula debe tener una descripción que no esté vacía." source="com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"/>
-<error line="24" severity="warning" message="La línea es mayor de 100 caracteres (encontrado 198)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="24" severity="warning" message="method def modifier en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="24" column="42" severity="warning" message="Abreviatura en nombre &apos;entradaXML&apos; debe contener no más de &apos;2&apos; mayúsculas." source="com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"/>
-<error line="25" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="26" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="27" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="28" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="29" severity="warning" message="method def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="23" severity="warning" message="Al cláusula debe tener una descripción que no esté vacía." source="com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"/>
+<error line="24" severity="warning" message="Al cláusula debe tener una descripción que no esté vacía." source="com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"/>
+<error line="25" severity="warning" message="Al cláusula debe tener una descripción que no esté vacía." source="com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"/>
+<error line="26" severity="warning" message="Al cláusula debe tener una descripción que no esté vacía." source="com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"/>
+<error line="27" severity="warning" message="Al cláusula debe tener una descripción que no esté vacía." source="com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"/>
+<error line="29" severity="warning" message="La línea es mayor de 100 caracteres (encontrado 303)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="29" severity="warning" message="method def modifier en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="29" column="69" severity="warning" message="Abreviatura en nombre &apos;entradaXML&apos; debe contener no más de &apos;2&apos; mayúsculas." source="com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"/>
+<error line="30" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="31" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="32" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="33" severity="warning" message="method def el descendiente en el nivel de sangrado 16 no está al nivel correcto, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="34" severity="warning" message="method def rcurly en el nivel de sangrado 8 no está al nivel correcto, 4" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
 </checkstyle>

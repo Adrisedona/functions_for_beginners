@@ -7,11 +7,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.xml.sax.SAXException;
-
-import util.UtilSax;
 
 /**
  * Clase para probar codigo antes de añadirlo a algun otro archivo de la
@@ -70,15 +65,6 @@ class Temp {
 		 * linea3
 		 * linea4
 		 */
-
-		try {
-			UtilSax.getSax("prueba.xml", PruebaSax.class);
-			//FUNCIONA
-		} catch (NoSuchMethodException | SecurityException | ParserConfigurationException | SAXException
-				| IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 
 }
