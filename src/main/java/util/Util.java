@@ -1,6 +1,11 @@
 package util;
 
 import java.awt.Rectangle;
+import java.sql.DatabaseMetaData;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.sql.Types;
 import java.util.Scanner;
 
 import javax.swing.*;
@@ -411,6 +416,45 @@ public final class Util {
 	public static String unixTimeToString(long unixTime) {
 		final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 		return Instant.ofEpochSecond(unixTime).atZone(ZoneId.of("GMT+1")).format(formatter);
+	}
+
+
+	public static String generateTable(ResultSet resu) throws SQLException {
+		ResultSetMetaData metaData = resu.getMetaData();
+		String table = "";
+		String separator = "";
+		for (int i = 0; i < metaData.getColumnCount(); i++) {
+			table += String.format("| %-20s |", metaData.getColumnName(i));
+			for (int j = 0; j < 22; j++) {
+				separator += "-";
+			}
+		}
+		table += "\n" + separator + "\n";
+		while (resu.next()) {
+			for (int i = 0; i < metaData.getColumnCount(); i++) {
+				switch (metaData.getColumnType(i)) {
+					case Types.INTEGER:
+						table += String.format("| %-20d |", resu.getInt(i));
+						break;
+					case Types.BOOLEAN:
+						table += String.format("| %-20b |", resu.getBoolean(i));
+						break;
+					case Types.CHAR:
+					case Types.VARCHAR:
+						table += String.format("| %-20s |", resu.getString(i));
+						break;
+					case Types.DATE:
+						table += String.format("| %-20s |", unixTimeToString(resu.getDate(i).getTime()));
+						break;
+					case Types.TIMESTAMP:
+						table += String.format("| %-20s |", unixTimeToString(resu.getTimestamp(i).getTime()));
+						break;
+					default:
+						throw new UnsupportedOperationException();
+				}
+			}
+		}
+		return table.replaceAll("||", "|");
 	}
 
 }

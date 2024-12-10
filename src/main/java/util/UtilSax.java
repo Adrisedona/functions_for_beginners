@@ -9,7 +9,7 @@ import java.lang.reflect.InvocationTargetException;
 public class UtilSax {
 
 	private UtilSax() {
-		
+
 	}
 
 	/**
