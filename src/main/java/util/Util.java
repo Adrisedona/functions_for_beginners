@@ -434,6 +434,9 @@ public final class Util {
 			for (int i = 1; i <= metaData.getColumnCount(); i++) {
 				switch (metaData.getColumnType(i)) {
 					case Types.INTEGER:
+					case Types.SMALLINT:
+					case Types.BIGINT:
+					case Types.BIT:
 						table += String.format("| %-20d |", resu.getInt(i));
 						break;
 					case Types.BOOLEAN:
@@ -448,6 +451,10 @@ public final class Util {
 						break;
 					case Types.TIMESTAMP:
 						table += String.format("| %-20s |", unixTimeToString(resu.getTimestamp(i).getTime()));
+						break;
+					case Types.FLOAT:
+					case Types.DOUBLE:
+						table += String.format("| %-18.2s |", resu.getDouble(i));
 						break;
 					default:
 						throw new UnsupportedOperationException(String.format("%s not supported", metaData.getColumnTypeName(i)));
