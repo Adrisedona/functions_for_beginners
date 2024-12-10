@@ -1,7 +1,6 @@
 package util;
 
 import java.awt.Rectangle;
-import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
@@ -424,8 +423,8 @@ public final class Util {
 		String table = "";
 		String separator = "";
 		for (int i = 1; i <= metaData.getColumnCount(); i++) {
-			table += String.format("| %-20s |", metaData.getColumnName(i));
-			for (int j = 0; j < 22; j++) {
+			table += String.format("| %-15s |", metaData.getColumnName(i));
+			for (int j = 0; j < 19; j++) {
 				separator += "-";
 			}
 		}
@@ -437,31 +436,31 @@ public final class Util {
 					case Types.SMALLINT:
 					case Types.BIGINT:
 					case Types.BIT:
-						table += String.format("| %-20d |", resu.getInt(i));
+						table += String.format("| %-15d |", resu.getInt(i));
 						break;
 					case Types.BOOLEAN:
-						table += String.format("| %-20b |", resu.getBoolean(i));
+						table += String.format("| %-15b |", resu.getBoolean(i));
 						break;
 					case Types.CHAR:
 					case Types.VARCHAR:
-						table += String.format("| %-20s |", resu.getString(i));
+						table += String.format("| %-15s |", resu.getString(i));
 						break;
 					case Types.DATE:
-						table += String.format("| %-20s |", unixTimeToString(resu.getDate(i).getTime()));
+						table += String.format("| %-15s |", unixTimeToString(resu.getDate(i).getTime()));
 						break;
 					case Types.TIMESTAMP:
-						table += String.format("| %-20s |", unixTimeToString(resu.getTimestamp(i).getTime()));
+						table += String.format("| %-15s |", unixTimeToString(resu.getTimestamp(i).getTime()));
 						break;
 					case Types.FLOAT:
 					case Types.DOUBLE:
-						table += String.format("| %-18.2s |", resu.getDouble(i));
+						table += String.format("| %-13.2s |", resu.getDouble(i));
 						break;
 					default:
 						throw new UnsupportedOperationException(String.format("%s not supported", metaData.getColumnTypeName(i)));
 				}
 			}
 		}
-		return table.replaceAll("||", "|");
+		return table;
 	}
 
 }
