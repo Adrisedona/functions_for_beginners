@@ -135,7 +135,7 @@ public final class Util {
 	 * 
 	 * @return {@code true} o {@code false}
 	 */
-	public static boolean RandomBoolean() {
+	public static boolean randomBoolean() {
 		return (int) (Math.random() * 2) == 1;
 	}
 
@@ -423,7 +423,7 @@ public final class Util {
 		String table = "";
 		String separator = "-";
 		for (int i = 1; i <= metaData.getColumnCount(); i++) {
-			table += String.format("| %-" + columnWidth + "s |", metaData.getColumnName(i));
+			table += String.format("| %-" + columnWidth + "s |", metaData.getColumnLabel(i));
 			for (int j = 0; j < columnWidth + 3; j++) {
 				separator += "-";
 			}
