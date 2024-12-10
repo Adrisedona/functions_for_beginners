@@ -423,7 +423,7 @@ public final class Util {
 		ResultSetMetaData metaData = resu.getMetaData();
 		String table = "";
 		String separator = "";
-		for (int i = 0; i < metaData.getColumnCount(); i++) {
+		for (int i = 1; i <= metaData.getColumnCount(); i++) {
 			table += String.format("| %-20s |", metaData.getColumnName(i));
 			for (int j = 0; j < 22; j++) {
 				separator += "-";
@@ -431,7 +431,7 @@ public final class Util {
 		}
 		table += "\n" + separator + "\n";
 		while (resu.next()) {
-			for (int i = 0; i < metaData.getColumnCount(); i++) {
+			for (int i = 1; i <= metaData.getColumnCount(); i++) {
 				switch (metaData.getColumnType(i)) {
 					case Types.INTEGER:
 						table += String.format("| %-20d |", resu.getInt(i));
@@ -450,7 +450,7 @@ public final class Util {
 						table += String.format("| %-20s |", unixTimeToString(resu.getTimestamp(i).getTime()));
 						break;
 					default:
-						throw new UnsupportedOperationException();
+						throw new UnsupportedOperationException(String.format("%s not supported", metaData.getColumnTypeName(i)));
 				}
 			}
 		}

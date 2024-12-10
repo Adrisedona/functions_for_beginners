@@ -684,6 +684,7 @@
 <error line="450" severity="warning" message="block el descendiente en el nivel de sangrado 48 no está al nivel correcto, 24" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="451" severity="warning" message="block el descendiente en el nivel de sangrado 48 no está al nivel correcto, 24" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="452" severity="warning" message="case el descendiente en el nivel de sangrado 40 no está al nivel correcto, 20" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="453" severity="warning" message="La línea es mayor de 100 caracteres (encontrado 154)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="453" severity="warning" message="block el descendiente en el nivel de sangrado 48 no está al nivel correcto, 24" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="454" severity="warning" message="switch rcurly en el nivel de sangrado 32 no está al nivel correcto, 16" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="455" severity="warning" message="for rcurly en el nivel de sangrado 24 no está al nivel correcto, 12" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
