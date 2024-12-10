@@ -418,13 +418,13 @@ public final class Util {
 	}
 
 
-	public static String generateTable(ResultSet resu) throws SQLException {
+	public static String generateTable(ResultSet resu, int columnWidth) throws SQLException {
 		ResultSetMetaData metaData = resu.getMetaData();
 		String table = "";
-		String separator = "";
+		String separator = "-";
 		for (int i = 1; i <= metaData.getColumnCount(); i++) {
-			table += String.format("| %-15s |", metaData.getColumnName(i));
-			for (int j = 0; j < 19; j++) {
+			table += String.format("| %-" + columnWidth + "s |", metaData.getColumnName(i));
+			for (int j = 0; j < columnWidth + 3; j++) {
 				separator += "-";
 			}
 		}
@@ -436,31 +436,32 @@ public final class Util {
 					case Types.SMALLINT:
 					case Types.BIGINT:
 					case Types.BIT:
-						table += String.format("| %-15d |", resu.getInt(i));
+						table += String.format("| %-" + columnWidth + "d |", resu.getInt(i));
 						break;
 					case Types.BOOLEAN:
-						table += String.format("| %-15b |", resu.getBoolean(i));
+						table += String.format("| %-" + columnWidth + "b |", resu.getBoolean(i));
 						break;
 					case Types.CHAR:
 					case Types.VARCHAR:
-						table += String.format("| %-15s |", resu.getString(i));
+						table += String.format("| %-" + columnWidth + "s |", resu.getString(i));
 						break;
 					case Types.DATE:
-						table += String.format("| %-15s |", unixTimeToString(resu.getDate(i).getTime()));
+						table += String.format("| %-" + columnWidth + "s |", unixTimeToString(resu.getDate(i).getTime()));
 						break;
 					case Types.TIMESTAMP:
-						table += String.format("| %-15s |", unixTimeToString(resu.getTimestamp(i).getTime()));
+						table += String.format("| %-" + columnWidth + "s |", unixTimeToString(resu.getTimestamp(i).getTime()));
 						break;
 					case Types.FLOAT:
 					case Types.DOUBLE:
-						table += String.format("| %-13.2s |", resu.getDouble(i));
+						table += String.format("| %-"+ (columnWidth - 2) +".2s |", resu.getDouble(i));
 						break;
 					default:
 						throw new UnsupportedOperationException(String.format("%s not supported", metaData.getColumnTypeName(i)));
 				}
 			}
+			table += "\n";
 		}
-		return table;
+		return table.replaceAll("\\|\\|", "\\|");
 	}
 
 }
