@@ -418,6 +418,13 @@ public final class Util {
 	}
 
 
+	/**
+	 * Genera un String conteniendo el resultado de una consulta en formato tabla
+	 * @param resu resultado de la consulta SQL
+	 * @param columnWidth ancho de columna de la tabla 
+	 * @return cadena conteniendo la tabla
+	 * @throws SQLException si ocurre algun error al acceder a la base de datos
+	 */
 	public static String generateTable(ResultSet resu, int columnWidth) throws SQLException {
 		ResultSetMetaData metaData = resu.getMetaData();
 		String table = "";
