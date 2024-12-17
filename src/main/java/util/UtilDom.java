@@ -13,19 +13,21 @@ import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
-
-
 import java.io.*;
 
 public class UtilDom {
 
-	private UtilDom() {}
+	private UtilDom() {
+	}
 
 	/**
 	 * Genera el arbol DOM del archivo parametro
-	 * @param ruta archivo xml del que generar el arbol
-	 * @param ignoreComents <code>true</code> para ignorar comentarios, <code>false</code> para no;
-	 * @return objeto conteniendo el arbol generado, <code>null</code> si ocurre algun error
+	 * 
+	 * @param ruta          archivo xml del que generar el arbol
+	 * @param ignoreComents <code>true</code> para ignorar comentarios,
+	 *                      <code>false</code> para no;
+	 * @return objeto conteniendo el arbol generado, <code>null</code> si ocurre
+	 *         algun error
 	 */
 	public static Document creaArbol(String ruta, boolean ignoreComments) {
 		Document doc = null;
@@ -41,8 +43,11 @@ public class UtilDom {
 
 	/**
 	 * Guarda un arbol DOM en el archivo especificado
-	 * @param doc arbol a grabar en disco
-	 * @param ruta ruta del archivo xml para el guardado, si no existe lo crea
+	 * 
+	 * @param doc               arbol a grabar en disco
+	 * @param ruta              ruta del archivo xml para el guardado, si no existe
+	 *                          lo crea
+	 * @param removeIndentation true si se desea quitar la indentacion, false si no
 	 * @throws ClassNotFoundException
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
@@ -50,11 +55,12 @@ public class UtilDom {
 	 * @throws TransformerFactoryConfigurationError
 	 * @throws TransformerException
 	 */
-	public static void grabarDOM(Document doc, String ruta)
+	public static void grabarDOM(Document doc, String ruta, boolean removeIndentation)
 			throws ClassNotFoundException, InstantiationException,
 			IllegalAccessException, FileNotFoundException, TransformerFactoryConfigurationError, TransformerException {
-
-		removeIndentation(doc);
+		if (removeIndentation) {
+			removeIndentation(doc);
+		}
 		DOMImplementationRegistry registry = DOMImplementationRegistry.newInstance();
 		DOMImplementationLS ls = (DOMImplementationLS) registry.getDOMImplementation("XML 3.0 LS 3.0");
 
@@ -75,7 +81,26 @@ public class UtilDom {
 	}
 
 	/**
+	 * Guarda un arbol DOM en el archivo especificado
+	 * 
+	 * @param doc               arbol a grabar en disco
+	 * @param ruta              ruta del archivo xml para el guardado, si no existe
+	 *                          lo crea
+	 * @throws ClassNotFoundException
+	 * @throws InstantiationException
+	 * @throws IllegalAccessException
+	 * @throws FileNotFoundException
+	 * @throws TransformerFactoryConfigurationError
+	 * @throws TransformerException
+	 */
+	public static void grabarDOM(Document doc, String ruta) throws ClassNotFoundException, InstantiationException,
+			IllegalAccessException, FileNotFoundException, TransformerFactoryConfigurationError, TransformerException {
+		grabarDOM(doc, ruta, false);
+	}
+
+	/**
 	 * Quita la indentacion de un arbol DOM
+	 * 
 	 * @param doc arbol del cual quitar la indentacion
 	 */
 	public static void removeIndentation(Document doc) {
@@ -87,7 +112,7 @@ public class UtilDom {
 		for (int i = children.getLength() - 1; i >= 0; i--) {
 			Node child = children.item(i);
 			if (child instanceof Text
-				&& ((Text) child).getData().trim().isEmpty()) {
+					&& ((Text) child).getData().trim().isEmpty()) {
 				element.removeChild(child);
 			} else if (child instanceof Element) {
 				removeWhitespaces((Element) child);
