@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionHandler {
+	
 	protected Connection conexion;
 
 	public void abrirConexion(String bd, String servidor, String usuario,
