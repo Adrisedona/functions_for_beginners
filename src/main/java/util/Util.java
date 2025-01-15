@@ -471,4 +471,8 @@ public final class Util {
 		return table.replaceAll("\\|\\|", "\\|");
 	}
 
+	public static void printTable(ResultSet resultSet, int columnWidth) throws SQLException {
+		System.out.println(generateTable(resultSet, columnWidth));
+	}
+
 }
